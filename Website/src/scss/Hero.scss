@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 40px 0px;
+
+    h1,h3,h5{
+        text-align: center;
+    }
+
+    h1{
+        line-height: 0.6;
+    }
+
+    h5{
+        
+    }
+
+
+    &-subtitle{
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+}

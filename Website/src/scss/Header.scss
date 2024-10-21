@@ -1,0 +1,66 @@
+@import "Font.scss";
+@import "App.scss";
+
+$border-prop: 3px solid $secondary-color;
+.header {
+    width: 100%;
+    height: 100px; 
+    border-bottom: $border-prop;
+    font-family: "Dugas-Pro-Condensed", "Jokerman", sans-serif;
+    letter-spacing: 4px;
+    
+
+    display: flex;
+
+    &-logo {
+        width: 100px;
+        height: auto;
+        font-size: 54px;
+        display: flex;
+        justify-items: center;
+        text-align: center; 
+        justify-content: center;
+
+        margin-top: -5px;
+
+        border-right: $border-prop ;
+    }
+
+
+    &-menu{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        gap: 50px;
+        height: 100%;
+
+        padding: 0px 50px;
+  
+        button{
+            width: auto;
+            font-family: "Bebas-Neue", sans-serif;
+            font-size: 40px;
+        }
+    }
+
+    &-social {
+        flex: 1;
+
+        padding: 0px 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        gap: 20px;
+
+        border-left: $border-prop;
+
+        a,img {
+            width: 50px;
+            height: 50px;
+        }
+
+        
+    }
+ 
+}
