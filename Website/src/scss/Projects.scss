@@ -1,0 +1,174 @@
+@import "App.scss";
+
+.projects {
+  h2 {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-frame {
+    width: 50%;
+    height: auto;
+    position: relative;
+    padding: 35px;
+    box-sizing: border-box;
+    border: $border-prop;
+    overflow: hidden;
+
+    &:hover .projects-image-left-info,
+    &:hover .projects-image-right-info {
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: solid 5px transparent;
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      transition-delay: 0s;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      transition-delay: 0.05s;
+    }
+
+    &:hover::before {
+      width: 100%;
+      height: 100%;
+      border-top-color: $secondary-color;
+      border-left-color: $secondary-color;
+    }
+
+    &:hover::after {
+      width: 100%;
+      height: 100%;
+      border-bottom-color: $secondary-color;
+      border-right-color: $secondary-color;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    color: $tertiary-color;
+    font-family: "Bebas-Neue", sans-serif;
+
+    &-right-info,
+    &-left-info {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &-right-info {
+      font-size: 24px;
+      position: absolute;
+      right: 40px;
+      text-align: right;
+    }
+
+    &-left-info {
+      font-size: 28px;
+      position: absolute;
+      bottom: 21%;
+      left: 42px;
+      line-height: 0.9;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &-info-links {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h4 {
+    flex: 1;
+    text-align: right;
+    line-height: 0.4;
+  }
+}
+
+.all {
+  margin-top: 50px;
+
+  &-container {
+    width: auto;
+    margin: 50px;
+  }
+
+  &-frame {
+    width: auto;
+    height: 60px;
+    border: $border-prop;
+
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        margin: 0px 40px;
+        font-family: "Bebas-Neue", sans-serif;
+        font-size: 36px;
+        text-align: left;
+      }
+
+      h5 {
+        font-size: 25px;
+        margin: 0px 0px;
+      }
+
+      div {
+        margin: 0px 10px;
+        gap: 5px;
+      }
+    }
+
+    * {
+      width: auto;
+    }
+
+    img {
+      width: 30px;
+      height: 30%;
+    }
+  }
+}

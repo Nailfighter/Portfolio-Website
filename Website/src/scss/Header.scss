@@ -1,16 +1,19 @@
 @import "Font.scss";
 @import "App.scss";
 
-$border-prop: 3px solid $secondary-color;
 .header {
     width: 100%;
-    height: 100px; 
+    height: 90px; 
     border-bottom: $border-prop;
     font-family: "Dugas-Pro-Condensed", "Jokerman", sans-serif;
     letter-spacing: 4px;
     
 
     display: flex;
+
+    a{
+        text-decoration: none;
+    }
 
     &-logo {
         width: 100px;
@@ -21,7 +24,7 @@ $border-prop: 3px solid $secondary-color;
         text-align: center; 
         justify-content: center;
 
-        margin-top: -5px;
+        margin-top: -10px;
 
         border-right: $border-prop ;
     }
@@ -41,6 +44,7 @@ $border-prop: 3px solid $secondary-color;
             width: auto;
             font-family: "Bebas-Neue", sans-serif;
             font-size: 40px;
+            background-color: $primary-color;
         }
     }
 

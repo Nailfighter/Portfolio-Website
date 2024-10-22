@@ -4,7 +4,7 @@ import "./scss/Header.scss";
 const Header = () => {
   return (
     <header className="header">
-      <span className="header-logo">SS</span>
+      <a href="/" className="header-logo">SS</a>
       <div className="header-menu">
         <button>PROJECTS</button>
         <button>

@@ -2,39 +2,72 @@ $primary-color: #262523;
 $secondary-color: #fff7f0;
 $tertiary-color: #777777;
 
+$border-prop: 1px solid $secondary-color;
+
 * {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
-    background-color: #262523;
-    color: $secondary-color;
+  color: $secondary-color;
 }
 
-button{
-    border: none;
+html {
+  background-color: #262523;
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  font-family: "Dugas-Pro-Extra-condensed", "Jokerman", sans-serif;
+  font-size: 320px;
+  letter-spacing: 20px;
+}
+
+h2,
+h4 {
+  font-family: "Dugas-Pro-Condensed", sans-serif;
+  font-size: 92px;
+  letter-spacing: 10px;
+}
+
+h3,
+h5 {
+  color: $tertiary-color;
+  font-family: "Bebas-Neue", sans-serif;
 }
 
 
-h1{
 
+h3 {
+  font-size: 128px;
 }
 
-h3,h5{
-    color: $tertiary-color;
+h4 {
+  line-height: 1;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+h5 {
+  font-size: 54px;
+}
+
+
+h6 {
+  font-family: "Bebas-Neue", sans-serif;
+  font-size: 28px;
+}
+
+
+.about{
+
+  margin: 20px 50px;
+  p{ 
     font-family: "Bebas-Neue", sans-serif;
-}
-
-h3{
-    font-size: 128px;
-}
-
-h1{
-    font-family: "Dugas-Pro-Extra-condensed", "Jokerman", sans-serif;
-    font-size: 320px;
-    letter-spacing: 20px;
-}
-
-h5{
-    font-size: 54px;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
 }
