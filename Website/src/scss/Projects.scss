@@ -67,8 +67,14 @@
 
   &-image {
     width: 100%;
+    height: auto;
     color: $tertiary-color;
     font-family: "Bebas-Neue", sans-serif;
+
+
+    img {
+      height: 455px;
+    }
 
     &-right-info,
     &-left-info {

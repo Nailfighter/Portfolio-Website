@@ -4,13 +4,15 @@ import "./scss/Header.scss";
 const Header = () => {
   return (
     <header className="header">
-      <a href="/" className="header-logo">SS</a>
+      <a href="/" className="header-logo">
+        SS
+      </a>
       <div className="header-menu">
-        <button>PROJECTS</button>
-        <button>
-          <u>RESUME</u>
-        </button>
-        <button>ABOUT</button>
+        <a href="#projects">PROJECTS</a>
+        <a href="/Shreyansh_Sahu_Resume.pdf" download>
+          RESUME
+        </a>
+        <a href="#about">ABOUT</a>
       </div>
       <section className="header-social">
         <a href="https://github.com/Nailfighter" target="_blank">

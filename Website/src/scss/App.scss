@@ -14,6 +14,7 @@ $border-prop: 1px solid $secondary-color;
 
 html {
   background-color: #262523;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -39,8 +40,6 @@ h5 {
   font-family: "Bebas-Neue", sans-serif;
 }
 
-
-
 h3 {
   font-size: 128px;
 }
@@ -55,19 +54,21 @@ h5 {
   font-size: 54px;
 }
 
-
 h6 {
   font-family: "Bebas-Neue", sans-serif;
   font-size: 28px;
 }
 
-
-.about{
-
+.about {
+  width: auto;
   margin: 20px 50px;
-  p{ 
+  p {
+    margin: 20px 0px;
     font-family: "Bebas-Neue", sans-serif;
-    font-size: 28px;
+    font-size: 34px;
     letter-spacing: 2px;
+    text-indent: 300px;
+    text-align: justify;
+    color: $tertiary-color;
   }
 }
