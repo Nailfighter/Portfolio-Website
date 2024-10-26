@@ -16,7 +16,7 @@ const About = () => {
         <br />
         <br />
         Right now, I am really getting into
-        <span>fullstack development</span>, <span>computer graphics</span>, and
+        <span> fullstack development</span>, <span>computer graphics</span>, and
         <span> cloud computing</span>. I enjoy playing around with new ideas and
         tools, whether it is building websites or creating cool simulations. I
         love tackling challenges and coming up with creative solutions.
